@@ -12,7 +12,7 @@ The stock market produces data in real-time, and our company needs to collect th
 
 ## Data Preparation
 
-I created an EC2 instance and initiated an Amazon MSK cluster to ensure data production and consumption.
+I created an EC2 instance and initiated an Amazon MSK cluster to ensure data production and consumption with Apache Kafka.
 
 On the EC2 instance, I installed Java-1.8.0 and Kafka v3.5.1 to coincide with my MSK Cluster. Once complete, Kafka was configured correctly; I used the below commands to create a topic, produce to, and consume from it:
 
