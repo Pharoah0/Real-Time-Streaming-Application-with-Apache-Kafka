@@ -1,0 +1,31 @@
+## Install Java
+sudo yum install java-1.8.0 -y
+
+## Install Kafka
+wget https://downloads.apache.org/kafka/3.5.1/kafka_2.12-3.5.1.tgz; tar -xvf kafka_2.12-3.5.1.tgz
+
+## Configure AWS
+aws configure
+us-east-1
+
+## Retrieve S3 File
+aws s3 cp s3://kafka-project5/indexProcessed.csv ./
+
+# Kafka Steps
+aws kafka list-clusters
+
+# Install Python Packages
+sudo yum install python -y; python -m ensurepip --upgrade; python -m pip install --upgrade pip; pip3 install kafka-python; pip3 install pandas; pip3 install s3fs
+
+Create topic
+/home/ec2-user/kafka_2.12-3.5.1/bin/kafka-topics.sh --create --bootstrap-server <<bootstrap server address>> --replication-factor 3 --partitions 1 --topic MSKTopic 
+
+List Topics
+/home/ec2-user/kafka_2.12-3.5.1/bin/kafka-topics.sh --bootstrap-server <<bootstrap server address>> --list
+
+Produce to Topic
+/home/ec2-user/kafka_2.12-3.5.1/bin/kafka-console-producer.sh --bootstrap-server <<bootstrap server address>> --topic MSKTopic 
+
+Consume from Topic
+/home/ec2-user/kafka_2.12-3.5.1/bin/kafka-console-consumer.sh --bootstrap-server <<bootstrap server address>> --topic MSKTopic 
+
