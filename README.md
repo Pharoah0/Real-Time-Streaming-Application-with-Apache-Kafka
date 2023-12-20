@@ -2,6 +2,10 @@
 
 Author: Pharoah Evelyn
 
+<p align="center">
+    <img src="https://github.com/Pharoah0/Real-Time-Streaming-Application-with-Apache-Kafka/blob/main/images/kafka_diagram.png" />
+</p>
+
 ## Overview
 
 #### This repository outlines the curation of a real-time streaming application to demonstrate the utility of Apache Kafka using a mock dataset
@@ -31,6 +35,21 @@ Consume from Topic:
 ```
 
 ## Methods Used
+
+Once Kafka was configured correctly, I tested the producer and consumer jobs by sending some text data and seeing if it would be received as expected.
+
+<p align="center">
+    <img src="https://github.com/Pharoah0/Real-Time-Streaming-Application-with-Apache-Kafka/blob/main/images/kafka_test.png" />
+</p>
+
+I was successfully able to produce and consume data as expected!
+The CLI with the black background is our producer instance, and the CLI with the blue background is our consumer instance.
+
+Following this, I ran two Python scripts:
+
+- One that pulled data from a CSV file originating from S3, producing rows of data to our Kafka Topic as JSON data every second.
+- One that consumes the JSON data and sends each message back to an S3 folder as an individual file
+  When successful, rows of JSON data will appear in S3 in real-time, which can be further analyzed for Data Analytics or Data Science.
 
 ## Discoveries made
 
