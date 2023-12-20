@@ -48,8 +48,9 @@ The CLI with the black background is our producer instance, and the CLI with the
 Following this, I ran two Python scripts:
 
 - One that pulled data from a CSV file originating from S3, producing rows of data to our Kafka Topic as JSON data every second.
-- One that consumes the JSON data and sends each message back to an S3 folder as an individual file
-  When successful, rows of JSON data will appear in S3 in real-time, which can be further analyzed for Data Analytics or Data Science.
+- One that consumes the JSON data and sends each message back to an S3 folder as an individual file.
+
+When successful, rows of JSON data will appear in S3 in real-time, which can be further analyzed for Data Analytics or Data Science.
 
 ## Discoveries made
 
