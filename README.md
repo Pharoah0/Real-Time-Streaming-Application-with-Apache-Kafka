@@ -57,5 +57,3 @@ When successful, rows of JSON data will appear in S3 in real-time, which can be 
 One can connect Amazon MSK to Firehose to stream data directly into S3. This approach can be done by employing Kafka-Kinesis-Connector, which is a connector to be used with Kafka Connect.
 
 One could also stream data into OpenSearch for real-time analysis and indexing.
-
-## Conclusions
