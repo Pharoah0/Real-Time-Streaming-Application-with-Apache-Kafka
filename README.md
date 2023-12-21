@@ -52,14 +52,10 @@ Following this, I ran two Python scripts:
 
 When successful, rows of JSON data will appear in S3 in real-time, which can be further analyzed for Data Analytics or Data Science.
 
-## Discoveries made
-
 ## Ways to improve this project
 
-Python jobs directly on the EC2 servers.
+One can connect Amazon MSK to Firehose to stream data directly into S3. This approach can be done by employing Kafka-Kinesis-Connector, which is a connector to be used with Kafka Connect.
 
-Firehose to stream data directly into S3.
-
-Stream data into OpenSearch for real-time analysis and indexing.
+One could also stream data into OpenSearch for real-time analysis and indexing.
 
 ## Conclusions
