@@ -8,7 +8,7 @@ from s3fs import S3FileSystem
 # Connecting Kafka-python to bootstrap servers
 consumer = KafkaConsumer(
     'MSKTopic',
-    bootstrap_servers=['<<bootstrap server address 1>>','<<bootstrap server address 2>>','<<bootstrap server address 3>>'], # Need IP of MSK Cluster
+    bootstrap_servers=['<<bootstrap server address 1>>','<<bootstrap server address 2>>','<<bootstrap server address 3>>'], # Need Plaintext Address of MSK Cluster
     value_deserializer=lambda x: json.loads(x.decode('utf-8')))
 
 # Connecting to S3 & sending data

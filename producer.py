@@ -7,7 +7,7 @@ import json
 
 # Connecting Kafka-python to bootstrap servers
 producer = KafkaProducer(
-    bootstrap_servers=['<<bootstrap server address 1>>','<<bootstrap server address 2>>','<<bootstrap server address 3>>'], # Need IP of MSK Cluster
+    bootstrap_servers=['<<bootstrap server address 1>>','<<bootstrap server address 2>>','<<bootstrap server address 3>>'], # Need Plaintext Address of MSK Cluster
     value_serializer=lambda x:
     dumps(x).encode('utf-8'))
 
