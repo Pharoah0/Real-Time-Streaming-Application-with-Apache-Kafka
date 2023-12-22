@@ -8,7 +8,7 @@ Author: Pharoah Evelyn
 
 ## Overview
 
-#### This repository outlines the curation of a real-time streaming application to demonstrate the utility of Apache Kafka using a mock dataset
+#### This repository outlines the curation of a real-time streaming application to demonstrate the utility of Apache Kafka using a mock dataset.
 
 ## Business Problem
 
